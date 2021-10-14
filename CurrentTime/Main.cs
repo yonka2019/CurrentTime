@@ -18,7 +18,7 @@ namespace CurrentTime
         /// </summary>
         private void Update_Time()
         {
-            TimeLabel.Text = DateTime.Now.ToString("hh:mm:ss");
+            TimeLabel.Text = DateTime.Now.ToString("HH:mm:ss");
             DateLabel.Text = DateTime.Now.ToString("dd.MM.yyyy");
         }
 
