@@ -9,6 +9,7 @@ namespace CurrentTime
         Light,
         Dark
     }
+
     public partial class Main : Form
     {
         private Themes currentTheme = Themes.Light;
