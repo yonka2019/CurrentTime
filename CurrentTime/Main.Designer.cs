@@ -33,8 +33,9 @@
             this.TimeLabel = new System.Windows.Forms.Label();
             this.MainTimer = new System.Windows.Forms.Timer(this.components);
             this.DateLabel = new System.Windows.Forms.Label();
-            this.TopMostButton = new System.Windows.Forms.Button();
             this.MainToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.ThemeModeChangeButton = new System.Windows.Forms.Button();
+            this.TopMostButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // TimeLabel
@@ -65,14 +66,25 @@
             this.DateLabel.Text = "Time";
             this.DateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // ThemeModeChangeButton
+            // 
+            this.ThemeModeChangeButton.Image = global::CurrentTime.Properties.Resources.dark_mode;
+            this.ThemeModeChangeButton.Location = new System.Drawing.Point(243, 53);
+            this.ThemeModeChangeButton.Name = "ThemeModeChangeButton";
+            this.ThemeModeChangeButton.Size = new System.Drawing.Size(26, 27);
+            this.ThemeModeChangeButton.TabIndex = 3;
+            this.MainToolTip.SetToolTip(this.ThemeModeChangeButton, "Dark Mode");
+            this.ThemeModeChangeButton.UseVisualStyleBackColor = true;
+            this.ThemeModeChangeButton.Click += new System.EventHandler(this.ThemeModeChangeButton_Click);
+            // 
             // TopMostButton
             // 
-            this.TopMostButton.Image = global::CurrentTime.Properties.Resources.top_menu_off_20px;
+            this.TopMostButton.Image = global::CurrentTime.Properties.Resources.dark_topmost;
             this.TopMostButton.Location = new System.Drawing.Point(12, 53);
             this.TopMostButton.Name = "TopMostButton";
             this.TopMostButton.Size = new System.Drawing.Size(26, 27);
             this.TopMostButton.TabIndex = 2;
-            this.MainToolTip.SetToolTip(this.TopMostButton, "TopMost");
+            this.MainToolTip.SetToolTip(this.TopMostButton, "Enable TopMost");
             this.TopMostButton.UseVisualStyleBackColor = true;
             this.TopMostButton.Click += new System.EventHandler(this.TopMostButton_Click);
             // 
@@ -81,6 +93,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(281, 92);
+            this.Controls.Add(this.ThemeModeChangeButton);
             this.Controls.Add(this.TopMostButton);
             this.Controls.Add(this.DateLabel);
             this.Controls.Add(this.TimeLabel);
@@ -104,6 +117,7 @@
         private System.Windows.Forms.Label DateLabel;
         private System.Windows.Forms.Button TopMostButton;
         private System.Windows.Forms.ToolTip MainToolTip;
+        private System.Windows.Forms.Button ThemeModeChangeButton;
     }
 }
 

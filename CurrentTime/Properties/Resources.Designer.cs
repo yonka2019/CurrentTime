@@ -63,9 +63,9 @@ namespace CurrentTime.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap top_menu_off_20px {
+        internal static System.Drawing.Bitmap dark_mode {
             get {
-                object obj = ResourceManager.GetObject("top_menu_off_20px", resourceCulture);
+                object obj = ResourceManager.GetObject("dark_mode", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,29 @@ namespace CurrentTime.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap top_menu_on_20px {
+        internal static System.Drawing.Bitmap dark_topmost {
             get {
-                object obj = ResourceManager.GetObject("top_menu_on_20px", resourceCulture);
+                object obj = ResourceManager.GetObject("dark_topmost", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap light_mode {
+            get {
+                object obj = ResourceManager.GetObject("light_mode", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap light_topmost {
+            get {
+                object obj = ResourceManager.GetObject("light_topmost", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

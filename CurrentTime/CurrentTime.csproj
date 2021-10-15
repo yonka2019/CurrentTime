@@ -85,9 +85,11 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Resources\dark_mode.png" />
+    <Content Include="Resources\dark_topmost.png" />
     <Content Include="Resources\icons8_clock.ico" />
-    <None Include="Resources\top_menu_on_20px.png" />
-    <None Include="Resources\top_menu_20px.png" />
+    <Content Include="Resources\light_mode.png" />
+    <Content Include="Resources\light_topmost.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
